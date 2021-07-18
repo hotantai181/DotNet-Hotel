@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1500
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLKS", "QLKS\QLKS.csproj", "{2928786D-0253-4367-9F44-AE0228BCC63D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_DAL", "BLL_DAL\BLL_DAL.csproj", "{C041557F-9FA2-40CD-BE15-57EA9D9444EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2928786D-0253-4367-9F44-AE0228BCC63D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2928786D-0253-4367-9F44-AE0228BCC63D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2928786D-0253-4367-9F44-AE0228BCC63D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2928786D-0253-4367-9F44-AE0228BCC63D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C041557F-9FA2-40CD-BE15-57EA9D9444EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C041557F-9FA2-40CD-BE15-57EA9D9444EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C041557F-9FA2-40CD-BE15-57EA9D9444EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C041557F-9FA2-40CD-BE15-57EA9D9444EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80E2C059-93DB-486C-88BE-C884EF19D5DD}
+	EndGlobalSection
+EndGlobal
