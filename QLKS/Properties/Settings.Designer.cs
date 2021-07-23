@@ -44,5 +44,16 @@ namespace QLKS.Properties {
                 return ((string)(this["QuanLyKSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ASUS-00I\\SQLEXPRESS;Initial Catalog=QuanLyKS(HC);Integrated Security=" +
+            "True")]
+        public string QuanLyKS_HC_ConnectionString {
+            get {
+                return ((string)(this["QuanLyKS_HC_ConnectionString"]));
+            }
+        }
     }
 }

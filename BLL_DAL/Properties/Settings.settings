@@ -26,5 +26,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=ASUS-00I\SQLEXPRESS;Initial Catalog=QuanLyKS(HC);Integrated Security=True</Value>
     </Setting>
+    <Setting Name="CNN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=ASUS-00I\SQLEXPRESS;Initial Catalog=QuanLyKS(HC);Integrated Security=True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -438,3 +438,4 @@ G:\hk6\UDTM\QuanLyKhachSan\QLKS\QLKS\obj\Debug\QLKS.csproj.CoreCompileInputs.cac
 G:\hk6\UDTM\QuanLyKhachSan\QLKS\QLKS\obj\Debug\QLKS.csproj.CopyComplete
 G:\hk6\UDTM\QuanLyKhachSan\QLKS\QLKS\obj\Debug\QLKS.exe
 G:\hk6\UDTM\QuanLyKhachSan\QLKS\QLKS\obj\Debug\QLKS.pdb
+G:\hk6\UDTM\QuanLyKhachSan\QLKS\QLKS\obj\Debug\QLKS.PhanQuyen.resources

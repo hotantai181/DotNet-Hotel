@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoDoPhong));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -56,13 +50,15 @@
             this.dichVu = new System.Windows.Forms.ToolStripMenuItem();
             this.suaPhongDsd = new System.Windows.Forms.ToolStripMenuItem();
             this.chuyenPhong = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
@@ -71,6 +67,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbbLp.Properties)).BeginInit();
             this.cmsConphong.SuspendLayout();
             this.cmsCoKhach.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -82,74 +83,6 @@
             this.groupControl1.Size = new System.Drawing.Size(307, 561);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Khách hàng";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 46);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(307, 515);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.dataGridView3);
-            this.tabPage1.Controls.Add(this.dataGridView2);
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 31);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(299, 480);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Danh sách đến";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 307);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(293, 170);
-            this.dataGridView3.TabIndex = 2;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 133);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(293, 174);
-            this.dataGridView2.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(293, 130);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 31);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(299, 480);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Chờ check-out";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // xtraTabControl1
             // 
@@ -312,13 +245,13 @@
             this.suaPhongDsd,
             this.chuyenPhong});
             this.cmsCoKhach.Name = "contextMenuStrip1";
-            this.cmsCoKhach.Size = new System.Drawing.Size(249, 157);
+            this.cmsCoKhach.Size = new System.Drawing.Size(227, 124);
             // 
             // traPhong
             // 
             this.traPhong.Image = ((System.Drawing.Image)(resources.GetObject("traPhong.Image")));
             this.traPhong.Name = "traPhong";
-            this.traPhong.Size = new System.Drawing.Size(248, 30);
+            this.traPhong.Size = new System.Drawing.Size(226, 30);
             this.traPhong.Text = "Trả Phòng";
             this.traPhong.Click += new System.EventHandler(this.traPhong_Click);
             // 
@@ -326,7 +259,7 @@
             // 
             this.dichVu.Image = ((System.Drawing.Image)(resources.GetObject("dichVu.Image")));
             this.dichVu.Name = "dichVu";
-            this.dichVu.Size = new System.Drawing.Size(248, 30);
+            this.dichVu.Size = new System.Drawing.Size(226, 30);
             this.dichVu.Text = "Dịch Vụ";
             this.dichVu.Click += new System.EventHandler(this.dichVu_Click);
             // 
@@ -334,7 +267,7 @@
             // 
             this.suaPhongDsd.Image = ((System.Drawing.Image)(resources.GetObject("suaPhongDsd.Image")));
             this.suaPhongDsd.Name = "suaPhongDsd";
-            this.suaPhongDsd.Size = new System.Drawing.Size(248, 30);
+            this.suaPhongDsd.Size = new System.Drawing.Size(226, 30);
             this.suaPhongDsd.Text = "Sửa Nhận Phòng";
             this.suaPhongDsd.Click += new System.EventHandler(this.suaPhongDsd_Click);
             // 
@@ -342,8 +275,85 @@
             // 
             this.chuyenPhong.Image = ((System.Drawing.Image)(resources.GetObject("chuyenPhong.Image")));
             this.chuyenPhong.Name = "chuyenPhong";
-            this.chuyenPhong.Size = new System.Drawing.Size(248, 30);
+            this.chuyenPhong.Size = new System.Drawing.Size(226, 30);
             this.chuyenPhong.Text = "Chuyển Phòng";
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 23);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(293, 454);
+            this.panel2.TabIndex = 0;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tabControl1.Location = new System.Drawing.Point(0, 46);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(307, 515);
+            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl1.TabIndex = 2;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.dataGridView3);
+            this.tabPage1.Controls.Add(this.dataGridView2);
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 31);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(299, 480);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Danh sách đến";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 23);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowTemplate.Height = 28;
+            this.dataGridView3.Size = new System.Drawing.Size(293, 454);
+            this.dataGridView3.TabIndex = 2;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 13);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 28;
+            this.dataGridView2.Size = new System.Drawing.Size(293, 10);
+            this.dataGridView2.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(293, 10);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 31);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(299, 480);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Chờ check-out";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // SoDoPhong
             // 
@@ -357,11 +367,6 @@
             this.Load += new System.EventHandler(this.SoDoPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
@@ -371,6 +376,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.cbbLp.Properties)).EndInit();
             this.cmsConphong.ResumeLayout(false);
             this.cmsCoKhach.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -378,9 +388,6 @@
         #endregion
 
         private DevExpress.XtraEditors.GroupControl groupControl1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
         private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private System.Windows.Forms.Panel panel1;
@@ -389,10 +396,8 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private DevExpress.XtraEditors.ComboBoxEdit cbbTang;
         private DevExpress.XtraEditors.ComboBoxEdit cbbLp;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ContextMenuStrip cmsConphong;
         private System.Windows.Forms.ToolStripMenuItem nhanPhong;
         private System.Windows.Forms.ContextMenuStrip cmsCoKhach;
@@ -402,6 +407,12 @@
         private System.Windows.Forms.ToolStripMenuItem dichVu;
         private System.Windows.Forms.ToolStripMenuItem suaPhongDsd;
         private System.Windows.Forms.ToolStripMenuItem chuyenPhong;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }

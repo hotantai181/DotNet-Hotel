@@ -9,6 +9,9 @@ namespace QLKS
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+        public static FormMenu femmenu = null;
+        public static DangNhap frmDn = null;
         [STAThread]
         static void Main()
         {

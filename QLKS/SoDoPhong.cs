@@ -31,7 +31,8 @@ namespace QLKS
         }
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            SoDoPhong_Load(sender,e);
+            flowLayoutPanel1.Controls.Clear();
+            loadTable();
         }
         public void loadTable()
         {

@@ -44,6 +44,8 @@
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem4 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem7 = new DevExpress.XtraBars.BarStaticItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -51,9 +53,23 @@
             this.btnLT = new DevExpress.XtraBars.BarButtonItem();
             this.LAD = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
+            this.barStaticItem3 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
+            this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemRatingControl1 = new DevExpress.XtraEditors.Repository.RepositoryItemRatingControl();
+            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barToolbarsListItem1 = new DevExpress.XtraBars.BarToolbarsListItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRatingControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -80,11 +96,23 @@
             this.barStaticItem1,
             this.LAD,
             this.barStaticItem2,
-            this.btndv});
+            this.btndv,
+            this.barStaticItem3,
+            this.barStaticItem4,
+            this.barStaticItem5,
+            this.barStaticItem6,
+            this.barStaticItem7,
+            this.barEditItem1,
+            this.barEditItem2,
+            this.barButtonItem1,
+            this.barToolbarsListItem1,
+            this.barButtonItem2});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 14;
+            this.barManager1.MaxItemId = 25;
             this.barManager1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.repositoryItemHypertextLabel1});
+            this.repositoryItemHypertextLabel1,
+            this.repositoryItemRatingControl1,
+            this.repositoryItemTextEdit1});
             this.barManager1.StatusBar = this.bar3;
             // 
             // bar1
@@ -195,7 +223,10 @@
             this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
             this.bar3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem1),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem2)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem2),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem4),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barStaticItem7),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem2)});
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
@@ -216,6 +247,18 @@
             this.barStaticItem2.Id = 11;
             this.barStaticItem2.Name = "barStaticItem2";
             this.barStaticItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barStaticItem2_ItemClick);
+            // 
+            // barStaticItem4
+            // 
+            this.barStaticItem4.Caption = "Chức vụ";
+            this.barStaticItem4.Id = 16;
+            this.barStaticItem4.Name = "barStaticItem4";
+            // 
+            // barStaticItem7
+            // 
+            this.barStaticItem7.Caption = "Lễ tân";
+            this.barStaticItem7.Id = 19;
+            this.barStaticItem7.Name = "barStaticItem7";
             // 
             // barDockControlTop
             // 
@@ -276,6 +319,48 @@
             // 
             this.repositoryItemHypertextLabel1.Name = "repositoryItemHypertextLabel1";
             // 
+            // barStaticItem3
+            // 
+            this.barStaticItem3.Caption = "barStaticItem3";
+            this.barStaticItem3.Id = 15;
+            this.barStaticItem3.Name = "barStaticItem3";
+            // 
+            // barStaticItem5
+            // 
+            this.barStaticItem5.Caption = "Lễ Tân";
+            this.barStaticItem5.Id = 17;
+            this.barStaticItem5.Name = "barStaticItem5";
+            // 
+            // barStaticItem6
+            // 
+            this.barStaticItem6.Caption = "Lễ tân";
+            this.barStaticItem6.Id = 18;
+            this.barStaticItem6.Name = "barStaticItem6";
+            // 
+            // barEditItem1
+            // 
+            this.barEditItem1.Caption = "barEditItem1";
+            this.barEditItem1.Edit = this.repositoryItemRatingControl1;
+            this.barEditItem1.Id = 20;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // repositoryItemRatingControl1
+            // 
+            this.repositoryItemRatingControl1.AutoHeight = false;
+            this.repositoryItemRatingControl1.Name = "repositoryItemRatingControl1";
+            // 
+            // barEditItem2
+            // 
+            this.barEditItem2.Caption = "da";
+            this.barEditItem2.Edit = this.repositoryItemTextEdit1;
+            this.barEditItem2.Id = 21;
+            this.barEditItem2.Name = "barEditItem2";
+            // 
+            // repositoryItemTextEdit1
+            // 
+            this.repositoryItemTextEdit1.AutoHeight = false;
+            this.repositoryItemTextEdit1.Name = "repositoryItemTextEdit1";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
@@ -285,11 +370,43 @@
             this.panel1.Size = new System.Drawing.Size(1115, 597);
             this.panel1.TabIndex = 4;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(35, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(10, 10);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Thoát";
+            this.barButtonItem1.Id = 22;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.Caption;
+            // 
+            // barToolbarsListItem1
+            // 
+            this.barToolbarsListItem1.Caption = "barToolbarsListItem1";
+            this.barToolbarsListItem1.Id = 23;
+            this.barToolbarsListItem1.Name = "barToolbarsListItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.ActAsDropDown = true;
+            this.barButtonItem2.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.barButtonItem2.Caption = "Thoát";
+            this.barButtonItem2.Id = 24;
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1115, 712);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -301,6 +418,9 @@
             this.Load += new System.EventHandler(this.FormMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRatingControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +451,18 @@
         private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem2;
         private DevExpress.XtraBars.BarButtonItem btndv;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem4;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem3;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem5;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem7;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem6;
+        private DevExpress.XtraBars.BarEditItem barEditItem2;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit1;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemRatingControl repositoryItemRatingControl1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarToolbarsListItem barToolbarsListItem1;
     }
 }

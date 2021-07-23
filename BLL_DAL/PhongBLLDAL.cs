@@ -15,18 +15,6 @@ namespace BLL_DAL
 {
     public class PhongBLLDAL
     {
-        public static IFirebaseClient CreateFirebaseClient()
-        {
-            IFirebaseConfig ifc = new FirebaseConfig()
-            {
-                AuthSecret = "afojSxW25t6PgEl98qmLSanufOI3jKkGG552XaoW",
-                BasePath = "https://laptrinhvb-c96be.firebaseio.com/"
-            };
-            IFirebaseClient client;
-            client = new FireSharp.FirebaseClient(ifc);
-            return client;
-        }
-
         QLKSDataContext _QLKS = new QLKSDataContext();
         public PhongBLLDAL()
         { }
@@ -122,7 +110,17 @@ namespace BLL_DAL
         }
         public IQueryable loadNV()
         {
-            return _QLKS.Accounts.Select(k => k);
+            IQueryable table = from nv in _QLKS.Accounts
+                               select new
+                               {
+                                   ID = nv.id,
+                                   Name = nv.Dislayname,
+                                   NgSinh = nv.NgaySinh,
+                                   GT = nv.Gt,
+                                   username = nv.Username,
+                                   type = nv.Type,
+                               };
+            return table;
         }
         public IQueryable loadHD()
         {
@@ -142,6 +140,17 @@ namespace BLL_DAL
         public IQueryable loadDatPhong()
         {
             return _QLKS.DatPhongs.Select(k => k);
+        }
+        public IQueryable loadNVTheoMa(int pid)
+        {
+            IQueryable table = from nv in _QLKS.Accounts
+                               where nv.id == pid
+                               select new
+                               {
+                                   Id = nv.id,
+                                   Pass = nv.PassWord,
+                               };
+            return table;
         }
         public IQueryable loadDVPhong()
         {
@@ -184,8 +193,21 @@ namespace BLL_DAL
                                };
             return table;
         }
-        #endregion  
+        public IQueryable loadNVTheoCV(string pUsername)
+        {
+            IQueryable table = from nv in _QLKS.Accounts
+                               where nv.Username == pUsername
+                               select new
+                               {
+                                   ID=nv.id,
+                                   type =nv.Type,
+                               };
+            return table;
+        }
+
+        #endregion
         //        //    //  //      /// //  CHỨC NÀNG   //        //    //  //      /// 
+
         #region Kiem Tra Dang Nhap
         public bool KTDN(string pTenDN, string pMatKhau)
         {
@@ -325,6 +347,25 @@ namespace BLL_DAL
             }
         }
 
+        public void CapNhatChucVu(int id, int pType)
+        {
+            Account ac = _QLKS.Accounts.Where(k => k.id == id).FirstOrDefault();
+            if (ac != null)
+            {
+                ac.Type = pType;
+                _QLKS.SubmitChanges();
+            }
+        }
+
+        public void CapNhatMatKhau(int id, string pPassword)
+        {
+            Account ac = _QLKS.Accounts.Where(k => k.id == id).FirstOrDefault();
+            if (ac != null)
+            {
+                ac.PassWord = pPassword;
+                _QLKS.SubmitChanges();
+            }
+        }
         #endregion
 
         #region Cap Nhat Hoa don

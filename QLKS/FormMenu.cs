@@ -35,7 +35,13 @@ namespace QLKS
             btnLT.Enabled = true;
             btnNV.Enabled = true;
             btnTT.Enabled = true;
-            barStaticItem2.Caption = Username.ToUpper();
+            barStaticItem2.Caption = Username;
+            dataGridView1.DataSource = ks.loadNVTheoCV(barStaticItem2.Caption);
+            if(int.Parse(dataGridView1.CurrentRow.Cells[1].Value.ToString()) ==1)
+            {
+                barStaticItem7.Caption = "Quản Lý";
+            }
+            else { barStaticItem7.Caption = "Lễ Tân"; }
         }
 
         private void btnDSDP_ItemClick(object sender, ItemClickEventArgs e)
@@ -126,6 +132,7 @@ namespace QLKS
             btnNV.Enabled = false;
             btnTT.Enabled = true;
             btndv.Enabled = true;
+            frm.Chucvu = barStaticItem7.Caption;
         }
 
         private void btnTT_ItemClick(object sender, ItemClickEventArgs e)
@@ -166,9 +173,20 @@ namespace QLKS
 
         private void barStaticItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
+            if (barStaticItem2.Caption == "Đăng nhập")
+            {
+                DangNhap dn = new DangNhap();
+                dn.Show();
+                this.Close();
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
             DangNhap dn = new DangNhap();
             dn.Show();
             this.Close();
+            
         }
     }
 }

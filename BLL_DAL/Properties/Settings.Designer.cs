@@ -55,5 +55,18 @@ namespace BLL_DAL.Properties {
                 return ((string)(this["QuanLyKS_HC_ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ASUS-00I\\SQLEXPRESS;Initial Catalog=QuanLyKS(HC);Integrated Security=" +
+            "True")]
+        public string CNN {
+            get {
+                return ((string)(this["CNN"]));
+            }
+            set {
+                this["CNN"] = value;
+            }
+        }
     }
 }

@@ -34,10 +34,8 @@
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
             this.btnCan = new DevExpress.XtraEditors.SimpleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +68,7 @@
             // 
             this.btnLogin.Appearance.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLogin.Appearance.Options.UseFont = true;
-            this.btnLogin.Location = new System.Drawing.Point(189, 249);
+            this.btnLogin.Location = new System.Drawing.Point(189, 223);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(216, 45);
@@ -82,7 +80,7 @@
             // 
             this.btnCan.Appearance.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCan.Appearance.Options.UseFont = true;
-            this.btnCan.Location = new System.Drawing.Point(435, 249);
+            this.btnCan.Location = new System.Drawing.Point(435, 223);
             this.btnCan.Margin = new System.Windows.Forms.Padding(4);
             this.btnCan.Name = "btnCan";
             this.btnCan.Size = new System.Drawing.Size(221, 45);
@@ -97,17 +95,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(289, 96);
             this.panel1.TabIndex = 11;
-            // 
-            // checkEdit1
-            // 
-            this.checkEdit1.Location = new System.Drawing.Point(189, 212);
-            this.checkEdit1.Margin = new System.Windows.Forms.Padding(4);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.checkEdit1.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit1.Properties.Caption = "  Remember my pasword";
-            this.checkEdit1.Size = new System.Drawing.Size(268, 29);
-            this.checkEdit1.TabIndex = 4;
             // 
             // textEdit2
             // 
@@ -141,11 +128,10 @@
             this.Appearance.Options.UseForeColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(740, 331);
+            this.ClientSize = new System.Drawing.Size(740, 321);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCan);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.checkEdit1);
             this.Controls.Add(this.textEdit2);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.label2);
@@ -156,7 +142,6 @@
             this.Text = "Đăng Nhập";
             this.TransparencyKey = System.Drawing.Color.Maroon;
             this.Load += new System.EventHandler(this.DangNhap_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
@@ -170,7 +155,6 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
         private DevExpress.XtraEditors.SimpleButton btnLogin;
         private DevExpress.XtraEditors.SimpleButton btnCan;
         private System.Windows.Forms.Panel panel1;
