@@ -49,9 +49,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnRs = new DevExpress.XtraEditors.SimpleButton();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnRs = new DevExpress.XtraEditors.SimpleButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -186,7 +186,7 @@
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(139, 34);
             this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "Phân quyền";
+            this.simpleButton1.Text = "Cập nhật chức vụ";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // searchControl1
@@ -262,6 +262,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thay đổi mật khẩu";
             // 
+            // btnRs
+            // 
+            this.btnRs.Location = new System.Drawing.Point(607, 99);
+            this.btnRs.Name = "btnRs";
+            this.btnRs.Size = new System.Drawing.Size(112, 34);
+            this.btnRs.TabIndex = 8;
+            this.btnRs.Text = "Reset";
+            this.btnRs.Click += new System.EventHandler(this.btnRs_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -278,15 +287,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(325, 27);
             this.comboBox1.TabIndex = 6;
-            // 
-            // btnRs
-            // 
-            this.btnRs.Location = new System.Drawing.Point(607, 99);
-            this.btnRs.Name = "btnRs";
-            this.btnRs.Size = new System.Drawing.Size(112, 34);
-            this.btnRs.TabIndex = 8;
-            this.btnRs.Text = "Reset";
-            this.btnRs.Click += new System.EventHandler(this.btnRs_Click);
             // 
             // NhanVien
             // 

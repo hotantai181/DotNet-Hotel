@@ -34,6 +34,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLyKSDataSet3 = new QLKS.QuanLyKSDataSet3();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,11 +64,11 @@
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTT = new DevExpress.XtraEditors.TextEdit();
-            this.phongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.quanLyKSDataSet3 = new QLKS.QuanLyKSDataSet3();
             this.phongTableAdapter = new QLKS.QuanLyKSDataSet3TableAdapters.PhongTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKSDataSet3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -76,8 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyKSDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -128,6 +128,16 @@
             this.Column1.Name = "Column1";
             this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column1.ValueMember = "id";
+            // 
+            // phongBindingSource
+            // 
+            this.phongBindingSource.DataMember = "Phong";
+            this.phongBindingSource.DataSource = this.quanLyKSDataSet3;
+            // 
+            // quanLyKSDataSet3
+            // 
+            this.quanLyKSDataSet3.DataSetName = "QuanLyKSDataSet3";
+            this.quanLyKSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Column2
             // 
@@ -376,16 +386,6 @@
             this.txtTT.Size = new System.Drawing.Size(220, 26);
             this.txtTT.TabIndex = 19;
             // 
-            // phongBindingSource
-            // 
-            this.phongBindingSource.DataMember = "Phong";
-            this.phongBindingSource.DataSource = this.quanLyKSDataSet3;
-            // 
-            // quanLyKSDataSet3
-            // 
-            this.quanLyKSDataSet3.DataSetName = "QuanLyKSDataSet3";
-            this.quanLyKSDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // phongTableAdapter
             // 
             this.phongTableAdapter.ClearBeforeFill = true;
@@ -403,6 +403,8 @@
             this.Load += new System.EventHandler(this.TraPhong_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyKSDataSet3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -413,8 +415,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.phongBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLyKSDataSet3)).EndInit();
             this.ResumeLayout(false);
 
         }
